@@ -17,6 +17,15 @@ module.exports = {
       maxWidth: {
         container: "69.375rem",
       },
+      transformOrigin: {
+        "top-center": "top center",
+      },
+      spacing: {
+        mobile: "calc(100vh - 5rem)",
+      },
+      backgroundImage: {
+        "mobile-nav": "url('./images/bg-pattern-mobile-nav.svg')",
+      },
     },
   },
   plugins: [],

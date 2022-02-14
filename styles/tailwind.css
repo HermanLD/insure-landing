@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer components {
+  .header-divider {
+    @apply h-[1px] w-36 bg-primary  mb-16 mx-auto;
+  }
+
+  .divider {
+    @apply h-[1px] w-full my-10 bg-primary;
+  }
+
   .attribution {
     font-size: 11px;
     text-align: center;
@@ -10,4 +18,14 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+}
+
+[aria-expanded="false"] .dropdown-icon-close,
+[aria-expanded="true"] .dropdown-icon-open {
+  display: none;
+}
+
+[aria-expanded="true"] .dropdown-icon-close,
+[aria-expanded="false"] .dropdown-icon-open {
+  display: block;
 }
