@@ -20,6 +20,28 @@
   }
 }
 
+.hero-section::before,
+.hero-section::after {
+  content: "";
+  position: absolute;
+}
+
+.hero-section::before {
+  top: 49%;
+  left: 0;
+  width: 195px;
+  height: 504px;
+  @apply bg-desktop-header-left bg-left bg-no-repeat hidden md:block;
+}
+
+.hero-section::after {
+  top: 135%;
+  right: 0;
+  width: 124px;
+  height: 330px;
+  @apply bg-mobile-header-right bg-left bg-no-repeat block md:hidden;
+}
+
 [aria-expanded="false"] .dropdown-icon-close,
 [aria-expanded="true"] .dropdown-icon-open {
   display: none;
